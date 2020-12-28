@@ -1,0 +1,13 @@
+Buen día.
+
+Hago entrega de este proyecto realizado por mi persona (Andrés Duque).
+
+Las tecnologías y librerías que utilicé fueron las siguientes:
+
+- React JS
+- Sass
+- FontAwesome
+- Bootstrap
+- Lottie
+
+NOTA: Mil disculpas por todo el código Javascript en un solo componente, en un principio no pensé que fuera a implementar tanto código, pero cada vez me surgían nuevas ideas que implementé y al final ya me resultaba muy complicado separar las funciones ya que quería entregar un buen proyecto lo antes posible.

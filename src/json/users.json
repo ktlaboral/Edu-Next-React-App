@@ -1,0 +1,95 @@
+{
+    "SUBSCRIPTION": "free",
+    "LAST_PAYMENT_DATE": "2013-03-10T02:00:00Z",
+    "CREATION_DATE": "2010-01-10T09:25:00Z",
+    "language": [
+        {
+            "name":"English", 
+            "code":"en"
+        },
+        {
+            "name":"Spanish", 
+            "code":"es"
+
+        },
+        {
+            "name":"Chinese", 
+            "code":"zh"
+        },
+        {
+            "name":"Italian", 
+            "code":"it"
+        },
+        {
+            "name":"French", 
+            "code":"fr"
+
+        },
+        {
+            "name":"German", 
+            "code":"de"
+        }
+    ],
+    "theme_name": [
+        {
+            "name":"Simply Fabulous",
+            "value":"simply-fabulous"
+        },
+        {
+            "name":"tropical-island",
+            "value":"tropical-island"
+        },
+        {
+            "name":"Safari",
+            "value":"safari"
+        },
+        {
+            "name":"Tranquility",
+            "value":"tranquility"
+        },
+        {
+            "name":"Mustache Bash",
+            "value":"mustache-bash"
+        },
+        {
+            "name":"Candy Crush",
+            "value":"candy-crush"
+        },
+        {
+            "name":"Garden Party",
+            "value":"garden-party"
+        }
+    ],
+    "ENABLED_FEATURES": [
+        {
+            "name":"CERTIFICATES INSTRUCTOR GENERATION",
+            "boolean": false
+        },
+        {
+            "name":"INSTRUCTOR BACKGROUND TASKS",
+            "boolean": false
+        },
+        {
+            "name":"ENABLE COURSEWARE SEARCH",
+            "boolean": false
+        },
+        {
+            "name":"ENABLE COURSE DISCOVERY",
+            "boolean": false
+        },
+        {
+            "name":"ENABLE DASHBOARD SEARCH",
+            "boolean": false
+        },
+        {
+            "name":"ENABLE EDXNOTES",
+            "boolean": false
+        }
+    ],
+    "language_code": "en",
+    "banner_message": "Welcome to Mr X's website",
+    "displayed_timezone": "America/Bogota",
+    "user_profile_image": "https://i.imgur.com/LMhM8nn.jpg",
+    "user_email": "barack@aol.com"
+
+}

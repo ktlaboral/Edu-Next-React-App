@@ -1,0 +1,386 @@
+//General Styles -----
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}
+
+// App ------
+
+body {
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#app {
+    height: 100%;
+}
+
+
+//Navbar -------
+.nav-container {
+    
+    box-shadow: 1px 0px 6px $blue;
+    background-color: white;
+
+    nav {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vh;
+    }
+
+}
+
+
+
+.image-container {
+    img{
+        width: 50%;
+    }
+}
+
+.free,.basic,.premium {
+    text-transform: capitalize;
+    margin-left: .5rem;
+}
+
+.free {
+    color: green;
+}
+
+.basic {
+    color: $blue;
+}
+
+.premium {
+    color: #B59345;
+}
+
+
+
+//------ Profile ------
+
+
+// Welcome Message
+
+
+.welcome-message {
+    font-size: 30px;
+}
+
+.ptag {
+    animation: show .25s ease-in-out forwards;
+    opacity: 0;
+    margin-top: 3rem;
+    display: inline-block;
+    white-space: pre;
+    font-style: italic;
+    font-weight: bold;
+} 
+
+@keyframes show{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+// Image Container
+.image-profile-container {
+    
+    border-radius: 15px;
+    
+    img{
+        object-fit: contain;
+        height: 500px;
+        position: relative;
+        margin: 0;
+    }
+
+    .free {
+        filter: drop-shadow(1px 1px 7px green);
+    }
+
+    .basic {
+        filter: drop-shadow(1px 1px 7px $blue);
+        border-radius: 15px;
+    }
+
+    .premium {
+        box-shadow: 1px 1px 9px 6px #B59345;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+}
+
+
+// Profile Container
+
+.front-face, .back-face  {
+    backface-visibility: hidden;
+    padding: 20px;
+    box-shadow : 1px 1px 6px lightgrey;
+    border-radius: 10px;
+    height: 500px;
+    position: relative;
+    background-color: white;
+}
+
+.front-face {
+    transition: all 1s ease;
+}
+
+.back-face {
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+}
+
+#profile {
+    // overflow: hidden;
+    height: 500px;
+}
+
+
+#profile-container {
+
+    padding: 0;
+    transform-style: preserve-3d;
+    perspective: 40rem;
+
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    .config-icon {
+        color: gray;
+        cursor: pointer;
+        font-size: 23px;
+        transition: all .25s;
+
+        &:hover {
+            filter: brightness(0.7);
+            transform: scale(1.1);
+        }
+    }
+
+    .free {
+        color: green;
+    }
+    
+    .basic {
+        color: $blue;
+    }
+    
+    .premium {
+        color: #B59345;
+    }
+
+    .trash{
+        color: red;
+    }
+
+}
+
+    
+.info-div {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+
+    p {
+        font-size: 13px;
+    }
+
+    h6 {
+        color: grey;
+        text-transform: uppercase;
+    } 
+
+    p {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+.info-div:last-of-type {
+    margin-bottom: 0;
+}
+
+.icon-container {
+
+    .edit {
+        color: $blue;
+    }
+
+    .accept {
+        color: green;
+    }
+
+    .cancel {
+        color: red;
+    }
+
+    svg {
+        margin-left: 5px;
+    }
+
+    svg:first-of-type {
+        margin-left: 0px;
+    }
+
+    .icon {
+        font-size: 25px;
+        cursor: pointer;
+        filter: drop-shadow(2px 2px 2px lightgrey);
+        transition: all .25s;
+
+        &:hover {
+            filter: brightness(0.7);
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+.alert {
+    position: absolute;
+    top: 161px;
+    box-shadow: 1px 1px 6px grey;
+}
+
+.default {
+    background: none;
+}
+
+.simply-fabulous {
+    background: url("../img/simply-fabulous.jpg");
+    font-family: monospace;
+}
+.tropical-island {
+    background: url("../img/tropical-island.jpg");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.safari {
+    background: url("../img/safari.jpg");
+    font-family: monospace;
+}
+.tranquility {
+    background: url("../img/tranquility.jpg");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mustache-bash {
+    background: url("../img/mustache-bash.jpg");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.candy-crush {
+    background: url("../img/candy-crush.jpg");
+    font-family: sans-serif;
+}
+.garden-party {
+    background: url("../img/garden-party.jpg");
+    font-family: serif;
+}
+
+.simply-fabulous,.safari,.tranquility,.mustache-bash,.candy-crush,.garden-party,.tropical-island {
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+}
+
+.timezone {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+label {
+    font-style: italic;
+    margin: 0;
+    margin-left: .5rem;
+    font-size: 13px;
+    text-transform: lowercase;
+}
+
+
+.done-lottie {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+}
+
+.labelInput {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#image {
+    animation: showAnimation 1s ease-in-out forwards;
+    animation-delay: .4s;
+    opacity: 0;
+}
+
+#profile-container {
+    animation: showAnimation 1s ease-in-out forwards;
+    animation-delay: .6s;
+    opacity: 0;
+}
+
+@keyframes showAnimation {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+
+
+@media (max-width: 375px) {
+    #banner-message {
+        .ptag {
+            font-size: 20px;
+        }   
+    }
+}
+
+@media (max-width: 425px) {
+    .image-container {
+        img{
+            width: 100%;
+        }
+    }
+
+    #profile-container {
+        height: 550px;
+    }
+
+    .back-face {
+        height: auto;
+    }
+
+    
+    body {
+        height: 1215px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-profile-container {
+        
+        img{
+            height: 350px;
+        }
+    }
+   
+}
